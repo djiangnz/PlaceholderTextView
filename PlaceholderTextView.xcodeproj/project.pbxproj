@@ -13,6 +13,7 @@
 		073DBD131BCA2C9C00C404E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073DBD111BCA2C9C00C404E5 /* Main.storyboard */; };
 		073DBD151BCA2C9C00C404E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073DBD141BCA2C9C00C404E5 /* Assets.xcassets */; };
 		073DBD181BCA2C9C00C404E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073DBD161BCA2C9C00C404E5 /* LaunchScreen.storyboard */; };
+		073DBD221BCA2D5300C404E5 /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073DBD211BCA2D5300C404E5 /* PlaceholderTextView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		073DBD141BCA2C9C00C404E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		073DBD171BCA2C9C00C404E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		073DBD191BCA2C9C00C404E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		073DBD201BCA2D5300C404E5 /* PlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextView.h; sourceTree = "<group>"; };
+		073DBD211BCA2D5300C404E5 /* PlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,10 @@
 		073DBD071BCA2C9C00C404E5 /* PlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				073DBD0B1BCA2C9C00C404E5 /* AppDelegate.h */,
-				073DBD0C1BCA2C9C00C404E5 /* AppDelegate.m */,
+				073DBD1F1BCA2D5300C404E5 /* PlaceholderTextView */,
 				073DBD0E1BCA2C9C00C404E5 /* ViewController.h */,
 				073DBD0F1BCA2C9C00C404E5 /* ViewController.m */,
 				073DBD111BCA2C9C00C404E5 /* Main.storyboard */,
-				073DBD141BCA2C9C00C404E5 /* Assets.xcassets */,
-				073DBD161BCA2C9C00C404E5 /* LaunchScreen.storyboard */,
-				073DBD191BCA2C9C00C404E5 /* Info.plist */,
 				073DBD081BCA2C9C00C404E5 /* Supporting Files */,
 			);
 			path = PlaceholderTextView;
@@ -74,9 +73,23 @@
 		073DBD081BCA2C9C00C404E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				073DBD0B1BCA2C9C00C404E5 /* AppDelegate.h */,
+				073DBD0C1BCA2C9C00C404E5 /* AppDelegate.m */,
+				073DBD141BCA2C9C00C404E5 /* Assets.xcassets */,
+				073DBD161BCA2C9C00C404E5 /* LaunchScreen.storyboard */,
+				073DBD191BCA2C9C00C404E5 /* Info.plist */,
 				073DBD091BCA2C9C00C404E5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		073DBD1F1BCA2D5300C404E5 /* PlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				073DBD201BCA2D5300C404E5 /* PlaceholderTextView.h */,
+				073DBD211BCA2D5300C404E5 /* PlaceholderTextView.m */,
+			);
+			path = PlaceholderTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +123,6 @@
 				TargetAttributes = {
 					073DBD041BCA2C9C00C404E5 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = R97Z8MRUEH;
 					};
 				};
 			};
@@ -153,6 +165,7 @@
 				073DBD101BCA2C9C00C404E5 /* ViewController.m in Sources */,
 				073DBD0D1BCA2C9C00C404E5 /* AppDelegate.m in Sources */,
 				073DBD0A1BCA2C9C00C404E5 /* main.m in Sources */,
+				073DBD221BCA2D5300C404E5 /* PlaceholderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PlaceholderTextView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lastObject.PlaceholderTextView;
@@ -273,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PlaceholderTextView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lastObject.PlaceholderTextView;
@@ -299,6 +314,7 @@
 				073DBD1E1BCA2C9C00C404E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

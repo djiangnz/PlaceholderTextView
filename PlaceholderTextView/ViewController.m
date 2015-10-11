@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PlaceholderTextView.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+
+    
+    PlaceholderTextView *txtview = [[PlaceholderTextView alloc] initWithFrame:CGRectMake(0, 50, 300, 200)];
+    txtview.placeholderText = @"placeholder";
+    
+    txtview.placeholderColor = [UIColor redColor];
+    
+    txtview.backgroundColor = [UIColor blueColor];
+    txtview.font = [UIFont systemFontOfSize:30];
+    
+    [self.view addSubview:txtview];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
